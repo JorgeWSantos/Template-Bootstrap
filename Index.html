@@ -12,15 +12,22 @@
     <title>Projeto</title>
   </head>
   <body>
-    <div class="container"><!--Conatiner-->
-      <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark bg-dark"><!--Barra Nav-->
+<!--Navegação--------------->
+
+    <!--Barra Nav-->
+    <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <!--Conatiner-->
+      <div class="container">
         <a class="navbar-brand h1 my-0" href="#">Curso</a>
 
+        <!--Botao Dispositivo móvel-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite" aria-controls="navbarSite">
           <span class="navbar-toggler-icon"></span>
         </button>
+        <!--Botao Dispositivo móvel-->
 
-        <div class="collapse navbar-collapse" id="navbarSite"><!--NavBar Collapse-->
+        <!--NavBar Collapse-->
+        <div class="collapse navbar-collapse" id="navbarSite">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Perfil</a></li>
@@ -29,7 +36,8 @@
             <li class="nav-item"><a class="nav-link" href="#">Contatos</a></li>
           </ul>
 
-          <ul class="navbar-nav ml-auto"><!--Dropdown Social-->
+          <!--Dropdown Social-->
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">Social</a>
               <div class="dropdown-menu" aria-labelledby="#navDrop">
@@ -38,14 +46,94 @@
                 <a class="dropdown-item" href="#">Twiter</a>
               </div>
             </li>
-          </ul><!--Dropdown Social-->
-          <form class="form-inline"><!--Formulario-->
+          </ul>
+          <!--Dropdown Social-->
+          
+          <!--Formulario-->
+          <form class="form-inline">
             <input class="form-control mr-sm-2 ml-lg-4" type="search" placeholder="Buscars.."/>
             <button class="btn btn-primary my-2 my-sm-0" type="submit">?</button>
-          </form><!--Formulario-->
-        </div><!--NavBar Collapse-->
-      </nav><!--Barra Nav-->
-    </div><!--Conatiner-->
+          </form>
+          <!--Formulario-->
+
+        </div>
+        <!--NavBar Collapse-->
+      </div>
+      <!--Conatiner-->
+    </nav>
+    <!--Barra Nav-->
+    
+<!--Navegação------------------------->
+
+<!--Carousel------------------------->
+    <div id="carouselSite" class="carousel slide" data-ride="carousel">
+
+      <!--Indicadores-->
+      <ol class="carousel-indicators">
+        <li class="active" data-target="#carouselSite" data-slide-to="0"></li>
+        <li data-target="#carouselSite" data-slide-to="1"></li>
+        <li data-target="#carouselSite" data-slide-to="2"></li>
+      </ol>
+      <!--Indicadores-->
+
+      <!--Imagens Carousel-->
+      <div class="carousel-inner">
+        
+        <div class="carousel-item active"  style="max-height:600px; width: 100%">
+        
+          <!--Img 1-->
+          <img src="img/img1.jpg" class="img-fluid d-block"/>
+
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Comece</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+            </p>
+          </div>
+        </div>
+        <!--Img 1-->
+
+        <!--Img 2-->
+        <div class="carousel-item" style="max-height:600px; width: 100%">
+          <img src="img/img2.jpg" class="img-fluid d-block"/>
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Permita</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+            </p>
+          </div>
+        </div>
+        <!--Img 2-->
+
+        <!--Img 3-->
+        <div class="carousel-item"  style="max-height:600px; width: 100%">
+          <img src="img/img3.jpg" class="img-fluid d-block"/>
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Descubra</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+            </p>
+          </div>
+        </div>
+        <!--Img 3-->
+      </div>
+      <!--Imagens Carousel-->
+
+      <!--Botao Avançar-->
+      <a class="carousel-control-prev" href="#carouselSite" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <!--Botao Avançar-->
+
+      <!--Botao Voltar-->
+      <a class="carousel-control-next" href="#carouselSite" role="button" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+      <!--Botao Voltar-->
+
+    </div>
+<!--Carousel------------------------->
+    
 
 
     <script src="node_modules/jquery/dist/jquery.js"></script>
