@@ -1,212 +1,168 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
-    <link rel="stylesheet" href="node_modules/bootstrap/scss/estilos.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/scss/estilos.css">
+  <title>Projeto</title>
+</head>
+<body>
 
-    <title>Projeto</title>
-  </head>
-  <body>
 <!--Navegação--------------->
+  <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <!--Conatiner-->
+    <div class="container">
+      <a class="navbar-brand h1 my-0" href="#">Curso</a>
 
-    <!--Barra Nav-->
-    <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark bg-dark">
-      <!--Conatiner-->
-      <div class="container">
-        <a class="navbar-brand h1 my-0" href="#">Curso</a>
+      <!--Botao Dispositivo móvel-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite" aria-controls="navbarSite">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!--Botao Dispositivo móvel-->
 
-        <!--Botao Dispositivo móvel-->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite" aria-controls="navbarSite">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!--Botao Dispositivo móvel-->
+      <!--NavBar Collapse-->
+      <div class="collapse navbar-collapse" id="navbarSite">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Perfil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Depoimentos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contatos</a></li>
+        </ul>
 
-        <!--NavBar Collapse-->
-        <div class="collapse navbar-collapse" id="navbarSite">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Perfil</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Serviços</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Depoimentos</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Contatos</a></li>
-          </ul>
+        <!--Dropdown Social-->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">Social</a>
+            <div class="dropdown-menu" aria-labelledby="#navDrop">
+              <a class="dropdown-item" href="#">Facebook</a>
+              <a class="dropdown-item" href="#">Insta</a>
+              <a class="dropdown-item" href="#">Twiter</a>
+            </div>
+          </li>
+        </ul>
+        <!--Dropdown Social-->
+        
+        <!--Formulario-->
+        <form class="form-inline">
+          <input class="form-control mr-sm-2 ml-lg-4" type="search" placeholder="Buscars.."/>
+          <button class="btn btn-primary my-2 my-sm-0" type="submit">?</button>
+        </form>
+        <!--Formulario-->
 
-          <!--Dropdown Social-->
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">Social</a>
-              <div class="dropdown-menu" aria-labelledby="#navDrop">
-                <a class="dropdown-item" href="#">Facebook</a>
-                <a class="dropdown-item" href="#">Insta</a>
-                <a class="dropdown-item" href="#">Twiter</a>
-              </div>
-            </li>
-          </ul>
-          <!--Dropdown Social-->
-          
-          <!--Formulario-->
-          <form class="form-inline">
-            <input class="form-control mr-sm-2 ml-lg-4" type="search" placeholder="Buscars.."/>
-            <button class="btn btn-primary my-2 my-sm-0" type="submit">?</button>
-          </form>
-          <!--Formulario-->
-
-        </div>
-        <!--NavBar Collapse-->
       </div>
-      <!--Conatiner-->
-    </nav>
-    <!--Barra Nav-->
-    
+      <!--NavBar Collapse-->
+    </div>
+    <!--Conatiner-->
+  </nav>
 <!--Navegação------------------------->
 
+
 <!--Carousel------------------------->
-    <div id="carouselSite" class="carousel slide" data-ride="carousel">
+  <div id="carouselSite" class="carousel slide" data-ride="carousel">
 
-      <!--Indicadores-->
-      <ol class="carousel-indicators">
-        <li class="active" data-target="#carouselSite" data-slide-to="0"></li>
-        <li data-target="#carouselSite" data-slide-to="1"></li>
-        <li data-target="#carouselSite" data-slide-to="2"></li>
-      </ol>
-      <!--Indicadores-->
+    <!--Indicadores-->
+    <ol class="carousel-indicators">
+      <li class="active" data-target="#carouselSite" data-slide-to="0"></li>
+      <li data-target="#carouselSite" data-slide-to="1"></li>
+      <li data-target="#carouselSite" data-slide-to="2"></li>
+    </ol>
+    <!--Indicadores-->
 
-      <!--Imagens Carousel-->
-      <div class="carousel-inner">
-        
-        <div class="carousel-item active"  style="max-height:600px; width: 100%">
-        
-          <!--Img 1-->
-          <img src="img/img1.jpg" class="img-fluid d-block"/>
-
-          <div class="carousel-caption d-none d-md-block">
-            <h2>Comece</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-            </p>
-          </div>
-        </div>
+    <!--Imagens Carousel-->
+    <div class="carousel-inner">
+      
+      <!--Img 1-->
+      <div class="carousel-item active"  style="max-height:600px; width: 100%">
+      
         <!--Img 1-->
+        <img src="img/img1.jpg" class="img-fluid d-block"/>
 
-        <!--Img 2-->
-        <div class="carousel-item" style="max-height:600px; width: 100%">
-
-          <img src="img/img2.jpg" class="img-fluid d-block"/>
-
-          <div class="carousel-caption d-none d-md-block">
-            <h2>Permita</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-            </p>
-          </div>
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Comece</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+          </p>
         </div>
-        <!--Img 2-->
-
-        <!--Img 3-->
-        <div class="carousel-item"  style="max-height:600px; width: 100%">
-
-          <img src="img/img3.jpg" class="img-fluid d-block"/>
-
-          <div class="carousel-caption d-none d-md-block">
-            <h2>Descubra</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-            </p>
-          </div>
-        </div>
-        <!--Img 3-->
       </div>
-      <!--Imagens Carousel-->
+      <!--Img 1-->
 
-      <!--Botao Avançar-->
-      <a class="carousel-control-prev" href="#carouselSite" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </a>
-      <!--Botao Avançar-->
+      <!--Img 2-->
+      <div class="carousel-item" style="max-height:600px; width: 100%">
 
-      <!--Botao Voltar-->
-      <a class="carousel-control-next" href="#carouselSite" role="button" data-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </a>
-      <!--Botao Voltar-->
+        <img src="img/img2.jpg" class="img-fluid d-block"/>
 
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Permita</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+          </p>
+        </div>
+      </div>
+      <!--Img 2-->
+
+      <!--Img 3-->
+      <div class="carousel-item"  style="max-height:600px; width: 100%">
+
+        <img src="img/img3.jpg" class="img-fluid d-block"/>
+
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Descubra</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+          </p>
+        </div>
+      </div>
+      <!--Img 3-->
     </div>
+    <!--Imagens Carousel-->
+
+    <!--Botao Avançar-->
+    <a class="carousel-control-prev" href="#carouselSite" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <!--Botao Avançar-->
+
+    <!--Botao Voltar-->
+    <a class="carousel-control-next" href="#carouselSite" role="button" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+    <!--Botao Voltar-->
+
+  </div>
 <!--Carousel------------------------->
+
 
 <!--Container Text/Card-->
-<div class="container my-2">
+  <div class="container my-2">
 
-    <!--Row Texto-->
-    <div class="row">
-      <div class="col-12 text-center my-5">
-        <h1 class="display-4">Inicio</h1>
-        <p>It is a long established fact that a reader will be distracted by the readable 
-          content of a page when looking at its layout. The point of using Lorem Ipsum 
-          is that it has a more-or-less normal distribution of letters, as opposed to using</p>
-      </div>
-    </div>
-    <!--Row Texto-->
-
-    <!--Row Card-->
+      <!--Row Texto-->
       <div class="row">
-      <!--Cards-->
+        <div class="col-12 text-center my-5">
+          <h1 class="display-4">Inicio</h1>
+          <p>It is a long established fact that a reader will be distracted by the readable 
+            content of a page when looking at its layout. The point of using Lorem Ipsum 
+            is that it has a more-or-less normal distribution of letters, as opposed to using</p>
+        </div>
+      </div>
+      <!--Row Texto-->
 
-        <!--Card 1-->
-        <div class="col-sm-4">
+      <!--Row Card-->
+        <div class="row">
+        <!--Cards-->
 
-          <div class="card">
+          <!--Card 1-->
+          <div class="col-sm-4">
 
-            <img class="card-img-top" src="img/img2.jpg"/>
+            <div class="card">
 
-            <div class="card-body">
-
-              <h4 class="card-title">Lorem</h4>
-              <h5 class="card-subtitle mb-2 text-muted">Lorem</h5>
-                <p class="card-text">There are many variations of passages of Lorem Ipsum available, 
-                but the majority have suffered alteration in some form, by injected humour, 
-                or randomised words which don't look even slightly believable. 
-              </p>
-
-            </div>
-
-            <ul class="list-group list-group-flush">
-
-                <li class="list-group-item">eum</li>
-
-                <li class="list-group-item">edois</li>
-
-                <li class="list-group-item">etres</li>
-
-              </ul>
+              <img class="card-img-top" src="img/img2.jpg"/>
 
               <div class="card-body">
-
-                <a class="card-link btn btn-primary" href="#">Acessar</a>
-
-              </div>
-
-              <div class="card-footer text-muted">
-                isso
-              </div>
-
-          </div>
-
-        </div>
-        <!--Card 1-->
-
-        <!--Card 2-->
-        <div class="col-sm-4">
-
-          <div class="card">
-            
-            <img class="card-img-top" src="img/img1.jpg"/>
-
-            <div class="card-body">
 
                 <h4 class="card-title">Lorem</h4>
                 <h5 class="card-subtitle mb-2 text-muted">Lorem</h5>
@@ -214,46 +170,42 @@
                   but the majority have suffered alteration in some form, by injected humour, 
                   or randomised words which don't look even slightly believable. 
                 </p>
-              
-            </div>
-
-            <ul class="list-group list-group-flush">
-
-                <li class="list-group-item">eum</li>
-
-                <li class="list-group-item">edois</li>
-
-                <li class="list-group-item">etres</li>
-
-              </ul>
-
-              <div class="card-body">
-
-                <a class="card-link btn btn-primary mr-2" href="#">Acessar</a>
-
-                <a class="card-link btn btn-primary mr-2 ml-4" href="#">Acessar</a>
-
-                <a class="card-link btn btn-primary" href="#">Acessar</a>
 
               </div>
 
-              <div class="card-footer text-muted">
+              <ul class="list-group list-group-flush">
+
+                  <li class="list-group-item">eum</li>
+
+                  <li class="list-group-item">edois</li>
+
+                  <li class="list-group-item">etres</li>
+
+                </ul>
+
+                <div class="card-body">
+
+                  <a class="card-link btn btn-primary" href="#">Acessar</a>
+
+                </div>
+
+                <div class="card-footer text-muted">
                   isso
                 </div>
-            
+
+            </div>
+
           </div>
+          <!--Card 1-->
 
-        </div>
-        <!--Card 2-->
-
-        <!--Card 3-->
-        <div class="col-sm-4">
-            
-          <img class="card-img-top" src="img/img3.jpg"/>
+          <!--Card 2-->
+          <div class="col-sm-4">
 
             <div class="card">
               
-                <div class="card-body">
+              <img class="card-img-top" src="img/img1.jpg"/>
+
+              <div class="card-body">
 
                   <h4 class="card-title">Lorem</h4>
                   <h5 class="card-subtitle mb-2 text-muted">Lorem</h5>
@@ -261,42 +213,179 @@
                     but the majority have suffered alteration in some form, by injected humour, 
                     or randomised words which don't look even slightly believable. 
                   </p>
-                  
+                
               </div>
 
               <ul class="list-group list-group-flush">
 
-                <li class="list-group-item">eum</li>
+                  <li class="list-group-item">eum</li>
 
-                <li class="list-group-item">edois</li>
+                  <li class="list-group-item">edois</li>
 
-                <li class="list-group-item">etres</li>
+                  <li class="list-group-item">etres</li>
 
-              </ul>
+                </ul>
 
-              <div class="card-body">
+                <div class="card-body">
 
-                <a class="card-link btn btn-primary" href="#">Acessar</a></div>
+                  <a class="card-link btn btn-primary mr-2" href="#">Acessar</a>
 
-              </div>
+                  <a class="card-link btn btn-primary mr-2 ml-4" href="#">Acessar</a>
 
-              <div class="card-footer text-muted">
-                  isso
-              </div>
-    
+                  <a class="card-link btn btn-primary" href="#">Acessar</a>
+
+                </div>
+
+                <div class="card-footer text-muted">
+                    isso
+                  </div>
+              
+            </div>
+
+          </div>
+          <!--Card 2-->
+
+          <!--Card 3-->
+          <div class="col-sm-4">
+              
+            <img class="card-img-top" src="img/img3.jpg"/>
+
+              <div class="card">
+                
+                  <div class="card-body">
+
+                    <h4 class="card-title">Lorem</h4>
+                    <h5 class="card-subtitle mb-2 text-muted">Lorem</h5>
+                      <p class="card-text">There are many variations of passages of Lorem Ipsum available, 
+                      but the majority have suffered alteration in some form, by injected humour, 
+                      or randomised words which don't look even slightly believable. 
+                    </p>
+                    
+                </div>
+
+                <ul class="list-group list-group-flush">
+
+                  <li class="list-group-item">eum</li>
+
+                  <li class="list-group-item">edois</li>
+
+                  <li class="list-group-item">etres</li>
+
+                </ul>
+
+                <div class="card-body">
+
+                  <a class="card-link btn btn-primary" href="#">Acessar</a>
+
+                </div>
+
+                <div class="card-footer text-muted">
+                    isso
+                </div>
+      
+          </div>
+          <!--Card 3-->
         </div>
-        <!--Card 3-->
+        <!--Cards-->
+        </div>
+      <!--Row Card-->
 
-      <!--Cards-->
-      </div>
-    <!--Row Card-->
-
-    </div>
-    <!--Row-->
-</div>
+  </div>
 <!--Container Text/Card-->
-    <script src="node_modules/jquery/dist/jquery.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-  </body>
+
+
+<!--btn Modal-->
+<div class="container my-4">
+  <div class="row">
+    <a class="card-link btn btn-success btn-block" href="#" data-toggle="modal" data-target="#siteModal">Modal</a>
+  </div>
+</div>
+<!--btn Modal-->
+
+
+<!--Modal-->
+  <div class="modal fade" id="siteModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+
+        <!--HeaderModal-->
+        <div class="modal-header">
+          <h5 class="modal-title">internet</h5>
+          <button type="button" class="close" data-dismiss="modal">x</button>
+        </div>
+        <!--HeaderModal-->
+
+        <!--bodyModal-->
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+
+              <!--Primeira Coluna-->
+              <div class="col-md-6">
+
+                <img src="img/img1.jpg" width="100%" class="img-responsive my-2"/>
+
+                <p>editores de páginas na internet agora
+                    usam Lorem Ipsum como texto-modelo padrão, 
+                    e uma rápida busca por 'lorem ipsum' mostra várioseditores de páginas na internet agora
+                    usam Lorem Ipsum como texto-modelo padrão, 
+                    e uma rápida busca por 'lorem ipsum' mostra vários.
+                    <p>editores de páginas na internet agora
+                    usam Lorem Ipsum como texto-modelo padrão, 
+                    e uma rápida busca por 'lorem ipsum' mostra várioseditores de páginas na internet agora
+                    usam Lorem Ipsum como texto-modelo padrão, 
+                    e uma rápida busca por 'lorem ipsum' mostra vários.
+                    <p>editores de páginas na internet agora
+                    usam Lorem Ipsum como texto-modelo padrão, 
+                    e uma rápida busca por 'lorem ipsum' mostra várioseditores de páginas na internet agora
+                    usam Lorem Ipsum como texto-modelo padrão, 
+                    e uma rápida busca por 'lorem ipsum' mostra vários.
+                  </p>
+              </div>
+              <!--Primeira Coluna-->
+            
+              <!--Segunda Coluna-->
+              <div class="col-md-6">
+
+                  <img src="img/img3.jpg" width="100%" class="img-responsive my-2"/>
+
+                <p>
+                    editores de páginas na internet agora
+                    usam Lorem Ipsum como texto-modelo padrão, 
+                    e uma rápida busca por 'lorem ipsum' mostra vários
+                    editores de páginas na internet agora
+                    usam Lorem Ipsum como texto-modelo padrão, 
+                    e uma rápida busca por 'lorem ipsum' mostra vários
+                    editores de páginas na internet agora
+                    usam Lorem Ipsum como texto-modelo padrão, 
+                    e uma rápida busca por 'lorem ipsum' mostra vários
+                    editores de páginas na internet agora
+                    usam Lorem Ipsum como texto-modelo padrão, 
+                    e uma rápida busca por 'lorem ipsum' mostra vários
+                </p>
+              </div>
+              <!--Segunda Coluna-->
+              
+            </div>
+          </div>
+        </div>
+        <!--bodyModal-->
+
+        <!--footerModal-->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Entendi</button>
+        </div>
+        <!--footerModal-->
+
+      </div>
+    </div>
+  </div>
+<!--Modal-->
+
+
+
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
 </html>
